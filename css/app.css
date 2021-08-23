@@ -1,0 +1,81 @@
+html {
+  background-color: #F7F3EE;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* General */
+.ex-feed-post {
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(231, 228, 221, 0.3);
+}
+
+/* Buttons */
+.ex-feed-post__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.ex-feed-post__button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+}
+
+.ex-feed-post__button-follow::before {
+  background-image: url('https://static.excerp.com/assets/icons/material/1.0.0/black/24x24/person_add_black_24dp.svg');
+}
+
+.ex-feed-post__button-report::before {
+  background-image: url('https://static.excerp.com/assets/icons/material/1.0.0/black/24x24/report_black_24dp.svg');
+}
+
+.ex-feed-post__button-like::before {
+  transition: filter .2s;
+  background-image: url('https://static.excerp.com/assets/icons/feather/4.24.1/heart.svg');
+}
+.ex-feed-post__button-like:hover::before {
+  /* red (crimson) color */
+  filter: invert(31%) sepia(99%) saturate(4061%) hue-rotate(339deg) brightness(100%) contrast(94%);
+}
+
+/* Header */
+.ex-feed-post__header {
+  display: flex;
+}
+.ex-feed-post-header__col:first-child {
+  margin-right: 20px;
+}
+
+/* Other elements */
+.ex-feed-post__author-name {
+  font-size: 24px;
+  margin-right: 17px;
+}
+
+.ex-feed-post__title {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+
